@@ -1,0 +1,64 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+.address { width: 942px;padding-bottom: 20px; border: 1px solid #e3e6e0; background: #fff; }
+.addrs{ margin:15px 0;width: 900px;}
+.addrs .btn-gn{ padding:7px 10px; margin-right:20px; vertical-align:middle;}
+.addrs b{ color:#5fad26;}
+.addressList li{ position:relative; width:900px; padding:15px 20px; margin-bottom:15px; border:1px solid #eaeaea}
+.addressList dt{ padding-bottom:10px;}
+.addressList .name{font:bold 18px microsoft yahei; color:#333;}
+.addressList .name span{ font: normal 12px SimSun;color:#fff; padding:5px 7px; background:#ef760a; margin-left:10px;}
+.addressList .del-btn {cursor:pointer;font-size:20px; color:#b5c399; font-family:sans-serif; position:absolute; right:15px; top:15px;}
+.addressList dd{ line-height:25px;}
+.addressList dd span{ display:inline-block; width:77px; text-align:right;}
+.addressList .btns{ position:absolute; right:15px; bottom:15px;}
+.addressList .btns a{ padding-left:15px; color:#666;}
+.addressList .btns a:hover{ color:#ef760a;}
+.addressList .btns .edit:hover{ color:#5fad26;}
+
+/*弹出层*/
+.modal-open .dropdown-menu {z-index: 2050;}
+.modal-open .dropdown.open {*z-index: 2050;}
+.modal-open .popover {z-index: 2060;}
+.modal-open .tooltip {z-index: 2070;}
+.modal-backdrop {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 999999;background-color: #b0b0b0;}
+.modal-backdrop.fade {opacity: 0.5;}
+.modal-backdrop,
+.modal-backdrop.fade.in {opacity: 0.35;filter: alpha(opacity=35);}
+.modal {position: fixed;top: 50%;left: 50%; z-index: 9999999; overflow: auto;width: 540px;padding:0 15px;margin: -200px 0 0 -285px;background-color: #fafcf6;border: 1px solid #6ab930}
+.modal.fade {-webkit-transition: opacity .3s linear, top .3s ease-out;-moz-transition: opacity .3s linear, top .3s ease-out;-ms-transition: opacity .3s linear, top .3s ease-out-o-transition: opacity .3s linear, top .3s ease-out;transition: opacity .3s linear, top .3s ease-out;top: -25%}
+.modal.fade.in {top: 50%;}
+.modal-header {border-bottom: 1px solid #6ab930; position:relative}
+.modal-header h3 { color:#5caa22; height:38px; font:14px/38px microsoft yahei;}
+.modal-header h3 i{ display:inline-block;*display:inline;*zoom:1; width:20px; height:20px; margin-right:5px; vertical-align:middle;}
+.modal-header h3 .i-newaddr{ background-position:-220px -160px;}
+.modal-header h3 .i-slctime{ background-position:-200px -160px;}
+.modal-header .close {cursor:pointer;font-size:20px; color:#b5c399; font-family:sans-serif; position:absolute; right:0; top:10px;}
+.modal-body {overflow-y: auto;max-height:400px;padding:15px 30px 23px 28px;min-height:150px; color:#333;}
+.modal-form {margin-bottom: 0;}
+.modal textarea{ width:458px; height:153px; padding:10px; border:1px solid #cbcbcb;}
+.modal .control-group{ margin-bottom:20px;}
+.modal .control-label{ float:left; display:block; width:85px; text-align:right; line-height:26px;}
+.modal .control-label span{ color:#ff5317; padding-right:5px;}
+.modal .controls { margin-left:85px;}
+.modal .controls select{ width:110px; margin-right:10px; vertical-align:middle;}
+.modal .controls input{ vertical-align:middle;padding:5px 15px; background-color:#fff; border:1px solid #ddd;}
+.modal .controls .input-xl{ width:300px;}
+.modal .controls .input-l{ width:240px;}
+.modal .controls .input-m{ width:200px;}
+.modal .controls .input-s{ width:110px;}
+.modal .controls .input-mini{ width:50px;}
+.modal .controls .btn-save{ background-color:#70bd2c; border:1px solid #62b01e; padding:10px 30px; font-size:16px; color:#fff; border-radius:3px;}
+.modal .table{ border-collapse: separate; border:1px solid #e3e3e3; width:100%; background-color:#fff;}
+.modal .table th, .modal .table td{ border:1px solid #e3e3e3; padding:10px;}
+.modal .table th{ color:#333; font-weight:normal; line-height:1.8em;}
+.modal .table td a{ color:#5cab22;}
+.m-td-disabled{ background-color:#f7f7f7; color:#d4d4d4}
+.modal .table th.left{text-align:left;}
+.modal .table td.selected{background-color: #f2fcea; border: 1px solid #70bd2c;}
+.modal .table td{ position:relative}
+.modal .table td b{ display:none}
+.modal .table td.selected b{ display:block}
+

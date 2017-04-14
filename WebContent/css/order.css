@@ -1,0 +1,274 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*购物车步骤*/
+.steps{ float:right; padding-top:20px; margin-right:40px;}
+.steps li{position:relative; float:left;}
+.steps li b{background:url(../images/order-step.png) no-repeat; width:36px; height:36px; display:block; float:left;}
+.steps li .b1{ background-position:0 0}
+.steps li .b2{ background-position:-42px 0}
+.steps li .b3{ background-position:-84px 0}
+.steps li i{width:165px; height:6px; background:#fff; border:1px solid #e5e5e5; border-width:1px 0; display:block; float:left; margin-top:15px; margin-right:0; overflow:hidden;}
+.steps li span{position:absolute; top:-20px; right:0; display:inline-block; width:160px; text-align:center; right:-62px; color:#333}
+.steps .on span{ color:#008842;}
+.steps .on i{ border-color:#008842; background:#008842;}
+.steps .on .b1{ background-position:0 -44px;}
+.steps .on .b2{ background-position:-42px -44px;}
+.steps .on .b3{ background-position:-84px -44px;}
+/* tab */
+.tabbable {*zoom:1; width:100%; margin:10px auto 0;}
+.tabbable:before, .tabbable:after {display:table;content:""}
+.tabbable:after {clear:both}
+.nav-tabs {margin-left:0;list-style:none;*zoom:1;border-bottom:1px solid #b4c1a3; padding:0 10px;}/*展示区上边框样式*/
+.nav-tabs:before, .nav-tabs:after {display:table;content:""}
+.nav-tabs:after {clear:both}
+.nav-tabs li {float:left; margin-right:10px;}
+.nav-tabs li a {display:block;font:12px/2 microsoft yahei; color:#606060; padding:5px 12px;}/*tab标签页的样式*/
+.nav-tabs li a:hover {text-decoration:none; color:#58a51f}/*鼠标滑过样式*/
+.nav-tabs .active a, .nav-tabs .active a:hover {cursor:default;border-bottom:5px solid #58a51f;color:#58a51f; font-weight:bold;}/*当前标签页样式*/
+.tab-content .tab-pane {display:none; padding:10px 0;}
+.tab-content .active {display:block}
+.tab-content ul{margin-left:-40px;}
+.tab-content li{display:inline-block;*display:inline;*zoom:1; width:88px;}
+.tab-content li a{display: block;font:12px/2 microsoft yahei; color:#606060; text-align:right}
+
+/*购物车结算*/
+.cart-footer{background-color:#f7f7f7;font:12px/1em microsoft yahei;  color:#666; margin-top:20px; padding:10px;}
+.cart-footer label{margin-left:20px; vertical-align:middle}
+.cart-footer input{margin-right:5px;}
+.cart-footer span{margin-right:20px;}
+.cart-footer em{color:#e8380d; font-weight:bold; font: bold 18px/1em microsoft yahei,Verdana;}
+.cart-footer .ub em{color:#249c61;font:bold 14px/1em microsoft yahei;}
+.cart-footer a{font:12px/40px microsoft yahei; margin-left:20px}
+.cart-footer a i{display:inline-block;*display:inline;*zoom:1; width:14px; height:16px; background-position:-100px -40px; margin-right:5px; vertical-align:middle}
+.cart-footer .btn{font:bold 18px/1em microsoft yahei;  background-color:#e8380d; color:#fff; padding:10px 20px; display:inline-block; margin-left:0}
+.cart-footer .none{ display:none;}
+.settle-fixed{z-index: 100;display: block;overflow: hidden;position: fixed;bottom: 0;left: 0;height: 40px;width: 100%;padding: 10px 0; background-color:#fff; border-top:1px solid #ddd}
+.cart-footer .wrap{ width:100%;}
+.settle-fixed .wrap{ width:1200px;}
+.settle-fixed .none{ display:inline-block;}
+
+.order h2, .order i,.modal-header h3 i, .order b, .modal b, .order i, .o-voucher i{background-image:url(../images/bg_order.png); background-repeat:no-repeat;}
+.order-alert{border:1px solid #e3e6e0; border-top:0; padding:10px 20px; background-color:#fff;}
+.order-alert{ padding-left:36px;}
+
+/*填写核对订单信息*/
+.order h2{height:38px; line-height:38px; background-color:#fff; background-position:0 -120px; border-bottom:2px solid #7bb798; text-indent:-9999em; position:relative}
+.order h3{font:bold 16px/1 microsoft yahei; color:#008842}
+.o-i-receive,.o-i-delivery,.o-i-payment,.o-i-invoice,.o-i-commodity,.o-i-voucher,.o-i-order{display:inline-block;*display:inline;*zoom:1;width:32px;height:32px;vertical-align:middle;margin-right:3px;}
+.o-i-receive{ background-position:3px -40px;}
+.o-i-delivery{ background-position:-37px -40px;}
+.o-i-payment{ background-position:-77px -40px;}
+.o-i-invoice{ background-position:-117px -40px;}
+.o-i-commodity{ background-position:-157px -40px;}
+.o-i-voucher{ background-position:-197px -40px;}
+.o-i-order{ background-position:-236px -40px;}
+.order b, .modal b{display:block;position: absolute;right: 0;bottom: 0;width: 15px;height: 12px;overflow: hidden;background-position:-80px -180px}
+.order-mode { border-left:1px solid #b0d0c0; position:relative;padding:20px; margin-top:20px; margin-bottom:-20px; padding-bottom:40px;}
+.order-mode-last {position:relative;padding:20px; margin-top:20px; margin-bottom:-20px; padding-bottom:40px;}
+.order-mode>div{ padding-bottom:20px; border-bottom:1px dashed #d5dfd0}
+.complete{ border-left:1px solid #7bb798;}
+.order-mode h3,.order-mode-last h3{ position:absolute; left:-16px; top:-16px;}
+
+.order .link { display: block; color: #008842; font-weight: bold; line-height: 2em; margin-left: 30px; cursor: pointer; }
+.order .link i { display: inline-block; *display:inline; *zoom:1; width: 8px; height: 10px; background-position: -100px -180px; vertical-align: middle; margin-right: 3px; }
+.order .table{ border-collapse:collapse; border:1px solid #e8e8e8; width:100%; background-color:#fff;}
+.order .table th, .order .table td{ border-top:1px solid #e8e8e8; padding:10px; text-align:center}
+.order .table th{ color:#666; background-color:#f9f9f9;}
+.order .table td { color:#333;}
+.order .table td img{ margin-right:8px; vertical-align:middle}
+.order .table td .selected{ display:inline-block;*display:inline;*zoom:1;background:#f2fcf7; border:1px solid #7bb798; padding:6px 50px; position:relative; color:#008842}
+
+/*收货信息+发票信息*/
+.o-receive label, .o-invoice-item label { display: inline-block; padding: 5px 20px 5px 5px; position: relative; border: 1px solid #fff; cursor: pointer; }
+.o-receive label input, .o-invoice label input { margin-right: 5px; }
+.o-receive label b, .o-invoice-item label b { display: none }
+.o-receive label:hover, .o-invoice-item label:hover { background-color: #f2fcf7; border: 1px solid #7bb798; }
+.o-receive label:hover b, .o-invoice-item label:hover b { display: block }
+.o-receive label.selected, .o-invoice-item label.selected { background-color: #f2fcf7; border-color: #7bb798; padding: 5px 19px 5px 5px; }
+.o-receive label.selected b, .o-invoice-item label.selected b { display: block }
+.o-receive .btn-setdefault, .o-receive .btn-edit, .o-receive .btn-del, .o-invoice-item .btn-edit, .o-invoice-item .btn-del { margin-left: 12px; display: none; color: #008842; }
+.o-receive label:hover .btn-setdefault, .o-receive label:hover .btn-edit, .o-receive label:hover .btn-del, .o-invoice-item label:hover .btn-edit, .o-invoice-item label:hover .btn-del { display: inline-block }
+
+/*收货信息*/
+.o-receive li { display: block; }
+.o-receive .adrtag { display: inline-block; margin: 0 0 0 5px; padding: 2px 5px; color: #008842; border: 1px solid #7bb798; background: #fbfffd; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.o-receive strong { margin: 0 10px; color: #262626 }
+.o-receive span { margin-right: 20px; }
+.o-receive label.selected .adrtag { color: #fff; background: #8cc4a7; }
+.o-receive label:hover strong { color: #008842 }
+.pickup{ margin-top:15px; padding:10px 20px; border: 1px solid #e8e8e8;}
+.pickup h4{ padding-bottom:10px; line-height:20px;}
+.consignee-info, .pickup-agree{ margin:10px 0 10px 6px;}
+.consignee-info .input{width: 170px;height: 16px;padding: 3px 10px;border: 1px solid #ddd;}
+.pickup-agree input{ margin-right:5px; vertical-align:middle;}
+.pickup-agree .btn-protocol{ color:#008842;}
+
+/*发票信息*/
+.o-invoice-item { margin: 10px 0 0 10px; display: none }
+.o-invoice-item .tab{ padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #eaeaea;}
+.o-invoice-item .tab label{ padding:5px; margin-left:10px;}
+.o-invoice-item .disabled{ color:#aaa;}
+.o-invoice-item .disabled{ border-color:#fff !important; background-color:#fff !important; cursor:default;}
+.o-invoice-item .promptbox{ position:relative; display:inline-block; margin-left:10px;}
+.o-invoice-item .promptbox span{ display:inline-block; width:16px; height:16px; vertical-align:middle; cursor:pointer; background: url(../images/bg_order.png) no-repeat -240px -160px;}
+.o-invoice-item .promptbox .dorpdown{ display:none; z-index:1;  position:absolute; bottom:24px; left:-36px; width:600px; padding:10px; line-height:20px; color:#666; background:#fdfffe; border:1px solid #c6ddd1;}
+.o-invoice-item .promptbox .dorpdown i{ position: absolute; bottom: -8px; left: 38px; width:12px; height:8px; background-position: -260px -160px;}
+.o-invoice-info { display:none; margin-left: 30px; line-height: 20px; }
+.o-invoice-info label, .o-invoice-info label:hover { background: none; border: 0; padding: 0; margin-right: 20px; }
+.o-invoice-info input[type=text] { border: 1px solid #ddd; padding: 5px 10px; margin-left: 5px; width: 280px; }
+.o-invoice-item .btn-save, .o-invoice-item .btn-cancel { padding: 6px 14px; border-radius: 4px; margin-right: 10px; line-height: 3em }
+.o-invoice-item .btn-save { background-color: #008842; border: 1px solid #008842; color: #fff; }
+.o-invoice-item .btn-cancel { background-color: #f5f4f4; border: 1px solid #ddd; color: #262626; }
+.o-invoice-item .tip{ margin-top:10px; padding-top:10px; border-top:1px solid #eaeaea;}
+
+/*商品信息*/
+.o-commodity .table td:first-child{ text-align:left; padding-left:60px}
+.o-commodity .fl input{ width:530px; height:16px; padding:5px 10px; border:1px solid #ddd; vertical-align:middle;}
+.i-tuihuo,.i-butui{ display:inline-block;*display:inline;*zoom:1; width:14px; height:14px; vertical-align:middle; margin-left:30px; margin-right:10px;}
+.i-tuihuo{ background-position:0 -180px;}
+.i-butui{ background-position:-20px  -180px;}
+
+/*支付信息*/
+.statistic{ line-height:2em; font-size:14px;}
+.o-payment label{ display:block; line-height:2em}
+.o-payment input{ margin-right:5px}
+.o-payment .o-prepay strong{ padding:0 3px; color:#008842; font-weight:normal;}
+.o-payment .o-prepay a:hover{ text-decoration:underline;}
+.o-payment img{ vertical-align:middle;}
+.o-payment .method img{ margin-left:10px}
+.o-payment .edit,.o-payment .selectother{ color:#008842; margin:0 10px; text-decoration:underline}
+.o-payment .edit{cursor:pointer;}
+.o-payment .o-pay{ display:none}
+.o-pay-label{ border:1px solid #e8e8e8; margin-bottom:-1px; padding:6px 33px; position:relative}
+.o-pay-label b{ display:none}
+.o-pay-label:hover, .o-pay-label.selected{ background-color:#f2fcf7; border:1px solid #7bb798; position: relative; z-index:99}
+.o-pay-label:hover b, .o-pay-label.selected b{ display:block}
+.o-pay-label.disabled{ color:#DAD0D3}
+.o-pay-label .icon-cash{ width:28px; height:28px; margin-left:7px; background-position:-114px -168px;}
+.o-pay-label .icon-swipe{ width:28px; height:28px; margin-left:19px; background-position:-149px -168px;}
+.o-pay-label .pay-type{ display:inline-block;*display:inline;*zoom:1; width:100px;}
+.o-subpay { margin-left:120px;}
+.o-subpay label{ display:inline-block; margin:15px 60px 0px 0;}
+.o-subpay input{ margin-right:5px;float: left;margin-top: 12px;}
+.o-subpay .pay-bank{width:190px; height:30px; padding:2px 5px; background:#fff; border:1px solid #cdcccb; float:left;}
+.o-subpay .pay-bank span{color:#857243; height:19px; line-height:19px; background:#f2ede0; display:inline-block; padding:0 5px; float:right; margin:5px 5px 0 0;}
+.o-subpay label:hover .pay-bank,.o-subpay label.on .pay-bank{ border-color:#008842;}
+
+/*抵用券信息*/
+.o-voucher .opened i{background-position:-40px -180px;}
+.o-voucher .item-tit, .o-voucher .sub-tit{ line-height:3em;}
+.o-voucher .item-tit i, .o-voucher .sub-tit i{display:inline-block;*display:inline;*zoom:1; width:16px; height:16px; vertical-align:middle; margin-right:6px; background-position:-60px -180px;}
+.o-voucher .item-wrap,.o-voucher .sub-wrap { position:relative; display: none; padding-left:22px;}
+.o-voucher .tabbable{ margin:0;}
+.o-voucher .tab-pane{ display:block; padding:10px 0 0 0;}
+.o-voucher .tab-content ul{ margin:0;}
+.o-voucher .tab-pane li{ clear:both; display:block; width:100%; position:relative; margin-bottom:10px; padding:0 0 0 20px;}
+.o-voucher .tab-pane li:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
+.o-voucher .tab-pane span{ display:block; float:left;}
+.o-voucher .tab-pane .cancel{ position:absolute; right:66px; top:3px; cursor:pointer;}
+.o-voucher .tab-pane .cancel a:hover{ text-decoration:underline;}
+.o-voucher .tab-pane .date{ clear:both; height:25px; line-height:25px;}
+.o-voucher .tab-pane .date span{ display:inline-block; float:none; margin:0 10px; color:#7a7777;}
+.o-voucher .give-box, .o-voucher .giftcard-box{ position:relative; width: 1020px;}
+.o-voucher .give-box:after,.o-voucher .giftcard-box:after { content: "."; display: block; height: 0; clear: both; visibility: hidden }
+.o-voucher .give-radio, .o-voucher .giftcard-radio{ position:absolute; left: 0; top:0; height:32px; line-height:32px; border:none; cursor: pointer;}
+.o-voucher .facevalue{ display:inline-block; width:92px; height:32px; line-height:32px; text-align:center; color:#fff; font-size:16px; font-weight:bold; font-family:"Microsoft YaHei";}
+.o-voucher .giftcard .facevalue,.o-voucher .give .facevalue{background:url(../images/quan.png) no-repeat;}
+.o-voucher .give .facevalue{ background-position:top  left;}
+.o-voucher .giftcard .facevalue{ background-position:bottom  left;}
+.o-voucher .profile{ height:30px; line-height:30px; width:850px; padding:0 60px 0 10px; border:1px solid #fff; background:#fff;
+-webkit-border-radius: 0 5px 5px 0;
+-moz-border-radius: 0 5px 5px 0;
+border-radius: 0 5px 5px 0;}
+.o-voucher .profile strong{ margin-right:10px; font-weight:normal;}
+.o-voucher .give .profile{ border-color:#7bb798}
+.o-voucher .giftcard .profile{ border-color:#f18d00}
+.o-voucher .give .facevalue, .o-voucher .give .profile strong, .o-voucher .give .cancel a{ color:#05984d;}
+.o-voucher .giftcard .facevalue, .o-voucher .giftcard .profile strong, .o-voucher .giftcard .cancel a{ color:#f18d00;}
+.o-voucher .select-gift{ display:none; border:1px solid #7bb798; border-top:0; border-radius:0 0 5px 5px;  width: 992px; padding:4px 10px 0 10px; margin-top:-4px; line-height:30px;}
+.o-voucher .select-gift label{ display:inline-block;*display:inline;*zoom:1; margin-left:30px; color:#05984d;}
+.o-voucher .select-gift label input{ vertical-align:10px;  vertical-align: middle; margin-right:5px;border:none !important;}
+.o-voucher .select-gift span{ color:#7a7777;}
+.o-voucher .give-box, .o-voucher .giftcard-box{ width:1040px;}
+.o-voucher .cash_coupon .profile{  width: 872px;}
+.o-voucher .cash_coupon .select-gift{  width: 1014px;}
+.o-voucher .input, .o-voucher .input-yzm{ border:1px solid #ddd; height:26px; line-height:26px; padding-left:10px; }
+.o-voucher .item-wrap .input{ width:180px; margin-right:23px;}
+.o-voucher .item-wrap .input-yzm{ width:110px; margin-right:8px;}
+.o-voucher .btn-green{ display:inline; padding:4px 14px 5px; background:#008842; border:1px solid #008842; border-radius:2px;font:bold 12px/3 microsoft yahei;color:#fff;margin-left:0;}
+.o-voucher .sub-wrap .give-seleceed,.o-voucher .item-wrap .give-seleceed{display:none;position: relative;}
+.o-voucher .item-wrap .tab-pane .give-seleceed{ display:block}
+
+/*订货人信息*/
+.o-order div{ margin-bottom:10px;}
+.o-order div .input{ width:170px; height: 16px; padding: 5px 10px; border:1px solid #ddd;}
+
+/*弹出层*/
+.modal-open .dropdown-menu {z-index: 2050;}
+.modal-open .dropdown.open {*z-index: 2050;}
+.modal-open .popover {z-index: 2060;}
+.modal-open .tooltip {z-index: 2070;}
+.modal-backdrop {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1040;background-color: #b0b0b0;}
+.modal-backdrop.fade {opacity: 0.5;}
+.modal-backdrop,
+.modal-backdrop.fade.in {opacity: 0.35;filter: alpha(opacity=35);}
+.modal {position: fixed;top: 50%;left: 50%;z-index: 1050;overflow: auto;width: 660px;padding:0 15px;margin: -200px 0 0 -285px;background-color: #f8fffc;border: 1px solid #008842}
+.modal.fade {-webkit-transition: opacity .3s linear, top .3s ease-out;-moz-transition: opacity .3s linear, top .3s ease-out;-ms-transition: opacity .3s linear, top .3s ease-out-o-transition: opacity .3s linear, top .3s ease-out;transition: opacity .3s linear, top .3s ease-out;top: -25%}
+.modal.fade.in {top: 50%;}
+.modal-header {border-bottom: 1px solid #7bb798; position:relative}
+.modal-header h3 { color:#008842; height:38px; font:14px/38px microsoft yahei;}
+.modal-header h3 i{ display:inline-block;*display:inline;*zoom:1; width:20px; height:20px; margin-right:5px; vertical-align:middle;}
+.modal-header h3 .i-newaddr{ background-position:-220px -160px;}
+.modal-header h3 .i-slctime{ background-position:-200px -160px;}
+.modal-header .close {cursor:pointer;font-size:20px; color:#b5c399; font-family:sans-serif; position:absolute; right:0; top:10px;}
+.modal-body {overflow-y: auto;max-height:400px;padding:15px 30px 23px 28px;min-height:150px; color:#333;}
+#myModal2 .modal-body {overflow-y: auto;max-height:400px;padding:15px 5px 23px 5px;min-height:100px; color:#333;}
+.modal-form {margin-bottom: 0;}
+.modal textarea{ width:458px; height:153px; padding:10px; border:1px solid #cbcbcb;}
+.modal .control-group{ margin-bottom:20px;}
+.modal .control-label{ float:left; display:block; width:85px; text-align:right; line-height:26px;}
+.modal .control-label span{ color:#ff5317; padding-right:5px;}
+.modal .controls { margin-left:85px;}
+.modal .controls select{ width:110px; margin-right:10px; vertical-align:middle;}
+.modal .controls input{ vertical-align:middle;padding:5px 15px; background-color:#fff; border:1px solid #ddd;}
+.modal .controls .input-xl{ width:300px;}
+.modal .controls .input-l{ width:240px;}
+.modal .controls .input-m{ width:200px;}
+.modal .controls .input-s{ width:110px;}
+.modal .controls .input-mini{ width:50px;}
+.modal .controls .adrtag{ position:relative; display:inline-block; padding: 5px 15px; margin-right:10px; background-color: #fff; border: 1px solid #ddd;}
+.modal .controls .adrtag b{ display:none;}
+.modal .controls .adrtag.selected{background-color: #f2fcf7; border-color: #7bb798;}
+.modal .controls .adrtag.selected b{ display:block;}
+.modal .controls .btn-save{ background-color:#008842; border:1px solid #008842; padding:10px 30px; font-size:16px; color:#fff; border-radius:3px;}
+.modal .table{ border-collapse: separate; border:1px solid #e3e3e3; width:100%; background-color:#fff;}
+.modal .table th, .modal .table td{ border:1px solid #e3e3e3; padding:10px;}
+.modal .table th{ color:#333; font-weight:normal; line-height:1.8em;}
+.modal .table td a{ color:#008842;}
+.m-td-disabled{ background-color:#f7f7f7; color:#d4d4d4}
+.modal .table th.left{text-align:left;}
+.modal .table td.selected{background-color: #f2fcf7; border: 1px solid #7bb798;}
+.modal .table td{ position:relative}
+.modal .table td b{ display:none}
+.modal .table td.selected b{ display:block}
+.modal p{ margin-top:15px; line-height:20px; color:#777;}
+#myModal3 p{ margin:0; color:#444;}
+#myModal3 h5{line-height: 35px; color:#444;}
+#myModal3 .btn-save{ display:block; width:150px; height:40px; line-height:40px; margin:20px auto 0 auto; background-color:#008842; border:1px solid #008842; font-size:16px; color:#fff; border-radius:3px; text-align:center;}
+
+/* 支付完成 */
+.order_complete{ margin-top:30px; border:1px solid #e3e6e0; border-top:1px solid #7bb798; background:#fff;}
+.order_complete dt{ display:block; zoom:1; padding:25px 55px; font: bold 24px/51px Microsoft YaHei; color:#58a51f; border-bottom:1px solid #e3e6e0; background:#fcffed;}
+.order_complete i{ width:51px; height:51px; margin-right:20px; background:url(../images/returns-icon.png) no-repeat}
+.order_complete dd{ padding:40px 128px; font-size:16px;}
+.order_complete li{ display:block; zoom:1; line-height:45px; border-bottom:1px dashed #e3e6e0}
+.order_complete img{ vertical-align:middle;}
+.order_complete span{ padding-right:30px;}
+.order_complete .date{ color:#58a51f}
+
+.order-mode h3{ width:100%;}
+.order-mode .backcart{position: absolute; right:10px;top:0; color:#008842; font: normal 12px "\5b8b\4f53";}
+.order-mode-last .backcart{position: absolute; right:10px;top:0; color:#008842; font: normal 12px "\5b8b\4f53";}
+.order h2, .cart h2 {
+    border-color: #05984d;
+}

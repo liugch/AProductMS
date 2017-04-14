@@ -1,0 +1,59 @@
+
+* { 
+	margin: 0;
+	 padding: 0;
+	 font-family: "Î¢ÈíÑÅºÚ";
+  }
+
+ body {
+	width:100px;
+	background-image: url(/AProductMS/images/admin/adminbg7.jpg);
+	background-size: cover;
+	background-position: 50% 0;
+	height: 100%;
+	text-align: center;
+}
+ 
+#adminLogin p{
+	height:22px;
+	padding-bottom:35px;
+	padding-left:70px; 
+	/* text-algin:center;
+	margin:0 auto; */
+} 
+.window {
+    background: linear-gradient(to bottom,#75A3EF 0,#8DB4EC 20%);
+}
+.panel-body {
+    background-color: #61ADD8;
+}
+.dialog-button{
+	background-color: #61ADD8;
+}
+ #adminMsg{
+ 	padding-bottom:0px;
+ 	
+ 	margin:10px 0 0 68px;
+ }
+ .panel-title {
+ 	text-align:center;
+ 	font-size:18px;
+ }
+/*  .window-proxy-mask, .window-mask {
+    background: #e8e8e8;
+} */
+#login {
+	padding:20 0 0 0;
+}
+.textbox {
+	height:28px;
+	padding:0 3px;
+	width:200px;
+}
+#btn {
+	text-align:center;
+}
+.easyui-linkbutton {
+	padding:0 10px;
+}
+

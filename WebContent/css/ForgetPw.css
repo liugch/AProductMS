@@ -1,0 +1,70 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*注册页面*/
+.logo{ position:relative;}
+input[type=text]:focus,input[type=password]:focus{outline:3px solid #b1d6ff;}
+.forget-pwd p{ width:66%; margin-left:auto; margin-right:auto;}
+.forget-pwd p img{ vertical-align:middle}
+.forget-pwd .gray{ margin:0 10px; color:#aaa;}
+.forget-pwd .field-name{ display:inline-block;*display:inline;*zoom:1; width:220px; text-align:right; padding-right:20px;}
+.forget-pwd .input{ margin-right:20px;}
+input[type=checkbox]{ margin-right:9px; height:14px; width:14px; vertical-align:-1px}
+.input-user, .input-key { background-image:url(../img/bg_input.png); background-repeat:no-repeat;}
+.input-key { background-position:276px -70px;}
+.input-user { background-position:276px -230px;}
+.forget-pwd .input-yzm { width:126px}
+.forget-pwd .input-jym { width:190px}
+.tips{ display:block; margin-left:240px; margin-top:20px; margin-bottom:60px; color:#999}
+.tips strong{ font-family:Arial; color:#f60000}
+.btn-jym{display:inline-block;*display:inline;*zoom:1;width:121px;height:38px;text-align:center;line-height:38px;background-color:#f7f7f7;border:1px solid #c1c1c1;color: #666;margin-left:10px; vertical-align:middle}
+.btn-white-s{display:inline-block;*display:inline;*zoom:1;margin-right:50px;width: 168px;height: 48px;text-align: center;background-color: #fff;border:1px solid #65b42c;color: #65b42c;font: 18px/48px "Microsoft YaHei";}
+p.tips{ padding-left:260px;}
+p.tips a{ color:#65b42c; text-decoration:underline}
+.complete{ font:bold 18px/120px "Microsoft YaHei"; color:#333;}
+.complete i{ display:inline-block;*display:inline;*zoom:1;width:26px;height:26px; background-position:-420px -194px; margin-right:20px;}
+.btn-yzm1{
+    display: inline-block;
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background-color: #f7f7f7;
+    border: 1px solid #c1c1c1;
+    color: #008842;
+}
+#sel{
+	display: none;
+}
+
+.f-step {
+    margin-top: 0;
+}
+.f-step1 {
+    background-position: 0 0;
+}
+.f-step2 {
+    background-position: 0 -48px;
+}
+.f-step {
+    width: 1200px;
+    height: 48px;
+    z-index: -1em;
+    margin: 60px 0;
+}
+.forget-pwd {
+    margin: 0;
+    padding-top: 0px;
+    border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 12px;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}

@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+*{
+	font-family:"微软雅黑";
+	font-size:14px;
+	text-decoration: none;
+}
+
+/* 头部 */'
+#top>h1{
+	float:left;
+}
+
+#top>p{
+	float:right;
+	width:200px;
+	text-align:center;
+}
+
+/* 菜单部分*/
+.tree-title {
+	font-size:16px;
+}
+#caidan{
+	padding:5px 14px; 
+}
+
+
+/* 类型部分 */
+#addPType{
+	width:500px;
+	padding:25px 30px;
+}
+#typeName{
+	 width:200px;
+	 height:25px; 
+}
+#addPType p{
+	font-size:16px;
+}
+#btn1{
+	padding-left:80px;
+}
+
+/*验证提示框部分*/
+.color{
+	padding:0 10px;
+	color:green;
+	font-size:20px;
+	font-weight: bolder;
+}
+/*添加商品部分  */
+	#addproduct{
+		margin-left:34px;
+		font-family: "微软雅黑";
+	}
+	.abc {
+		color: green;
+		font-size:15px;
+		font-weight: bold;
+		margin-left:5px;
+	}
+	#mmm{
+		width:180px;
+		height:60px;
+		background: url('/AProductMS/img/adds.png') no-repeat;
+ 		background-size:180px 60px;
+ 		z-index: 100;
+ 		margin-left:90px;
+ 		margin-top:-20px;
+	}
+	#addproduct div p,#types{
+		margin-top:10px;
+		margin-bottom:10px ;
+	}
+	#mmm div{
+		float:left;
+	}
+	#addproduct input{
+		width:180px;
+		height:20px;
+	}

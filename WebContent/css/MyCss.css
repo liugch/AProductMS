@@ -1,0 +1,206 @@
+@charset "utf-8";
+body{
+	margin: 0;
+	font-family: "微软雅黑";
+	background:#F7F8F8;
+}
+body,ul,li,ol,img{
+	margin: 0;
+	padding: 0;
+}
+div{
+	display: block;
+}
+.zy{
+	padding: 0;
+}
+.header{
+	background: #E0E0E0;
+}
+.wrap{
+	height:80px; 
+	padding:5px 0 5px 0;
+}
+.logo {
+	float: left;
+	width: 240px;
+	padding: 0 35px 5px 60px;
+	margin-right: 10px;
+}
+.logo a{
+	display: block;
+	width: 200px;
+	height: 70px;
+	background: url(../img/logo.png) no-repeat left top;
+}
+
+/*商品楼层*/
+.commodity{
+	padding: 0 0 5px 75px;
+}
+#jin{
+	padding: 0 15px 0 -100px;
+}
+hr{
+	width: 1200px;
+}
+.fentu img:hover{
+	transform: translate(5px,0);
+	transition: all 0.5s;
+	overflow: hidden;
+}
+.fnum{
+	width:40px;
+	height: 30px;
+	padding: 0 15px 0 0px;
+	overflow: hidden;
+}
+#jin{
+	margin: 0 0 0 -160px;
+}
+.floor-title a{
+	color: #FD603C;
+	text-decoration: none;	
+}
+.floor-title span{
+	padding: 0 0 0 910px;
+	font-size: 7px;
+	color:#FD603C;
+}
+
+
+
+.floor-title1 a{
+	color: #007F4D;
+	text-decoration: none;
+}
+.floor-title1 span{
+	padding: 0 0 0 910px;
+	font-size: 7px;
+	color: #007F4D;
+}
+
+
+
+.floor-title2 a{
+	color: #C2C945;
+	text-decoration: none;
+}
+.floor-title2 span{
+	padding: 0 0 0 910px;
+	font-size: 7px;
+	color: #C2C945;
+}
+.floor-title3 a{
+	color: #45c6ce;
+	text-decoration: none;
+}
+.floor-title3 span{
+	padding: 0 0 0 910px;
+	font-size: 7px;
+	color: #45c6ce;
+}
+.floor-title4 a{
+	color: #FFCC00;
+	text-decoration: none;
+}
+.floor-title4 span{
+	padding: 0 0 0 890px;
+	font-size: 7px;
+	color: #FFCC00;
+}
+.floor-title5 a{
+	color: #E08683;
+	text-decoration: none;
+}
+.floor-title5 span{
+	padding: 0 0 0 890px;
+	font-size: 7px;
+	color: #E08683;
+}
+.floor-title6 a{
+	color: #B84F00;
+	text-decoration: none;
+}
+.floor-title6 span{
+	padding: 0 0 0 890px;
+	font-size: 7px;
+	color: #B84F00;
+}
+.floor-title7 a{
+	color: #764E00;
+	text-decoration: none;
+}
+.floor-title7 span{
+	padding: 0 0 0 870px;
+	font-size: 7px;
+	color: #764E00;
+}
+.floor-title8 a{
+	color: #940505;
+	text-decoration: none;
+}
+.floor-title8 span{
+	padding: 0 0 0 935px;
+	font-size: 7px;
+	color: #940505;
+}
+.floor-title9 a{
+	color: #3CA3DC;
+	text-decoration: none;
+}
+.floor-title9 span{
+	padding: 0 0 0 935px;
+	font-size: 7px;
+	color: #3CA3DC;
+}
+
+/*------侧边悬浮导航------*/
+#kfu{ 
+	width:51px; 
+	height:43px; 
+	position:fixed; 
+	left:50%; 
+	margin-left: 620px; 
+	bottom:70px; 
+	background:url(../img/kefu.jpg) no-repeat left top;
+}
+#kfu:hover{
+	background: url(../img/kefu.jpg) no-repeat 0px -44px;
+}
+#btn{
+	width:51px; 
+	height:43px; /*display: none;*/ 
+	position:fixed; 
+	left:50%; 
+	margin-left: 620px; 
+	bottom:30px; 
+	background:url(../img/top.jpg) no-repeat left top;
+}
+#btn:hover {
+	background:url(../img/top.jpg) no-repeat 0 -44px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
